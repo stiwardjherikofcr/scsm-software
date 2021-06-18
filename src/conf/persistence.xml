@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="scsmPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>dto.Estado</class>
+        <class>dto.Microcurriculo</class>
+        <class>dto.Cambio</class>
+        <class>dto.EquivalenciaMateria</class>
+        <class>dto.Docente</class>
+        <class>dto.Pensum</class>
+        <class>dto.SeccionMicrocurriculo</class>
+        <class>dto.Contenido</class>
+        <class>dto.TipoAsignatura</class>
+        <class>dto.MateriaPeriodo</class>
+        <class>dto.Usuario</class>
+        <class>dto.SeccionCambio</class>
+        <class>dto.AreaFormacion</class>
+        <class>dto.Programa</class>
+        <class>dto.Materia</class>
+        <class>dto.Seccion</class>
+        <class>dto.Facultad</class>
+        <class>dto.TablaMicrocurriculo</class>
+        <class>dto.MateriaPeriodoGrupo</class>
+        <class>dto.EncabezadoTabla</class>
+        <class>dto.Rol</class>
+        <class>dto.TipoSeccion</class>
+        <class>dto.TablaMicrocurriculoInfo</class>
+        <class>dto.Departamento</class>
+        <class>dto.Programa_1</class>
+        <class>dto.PrerrequisitoMateria</class>
+        <class>dto.Encabezado</class>
+        <class>tempo.EncabezadoTabla</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/estudiante_31?zeroDateTimeBehavior=convertToNull"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="10100101"/>
+        </properties>
+    </persistence-unit>
+</persistence>
